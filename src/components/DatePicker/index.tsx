@@ -4,7 +4,11 @@ import { useDispatch, useSelector } from "react-redux";
 import { currentCalendar, setDay } from "../../redux/store/calender";
 import { useEffect, useState } from "react";
 
-export default function DatePicker() {
+type DatePickerProps = {
+  onClickDay?: () => void;
+};
+
+export default function DatePicker({ onClickDay }: DatePickerProps) {
   const dispatch = useDispatch();
 
   const { current, selectedDay } = useSelector(currentCalendar);
@@ -24,6 +28,7 @@ export default function DatePicker() {
         selected={selectedDay}
         onSelect={(event: unknown) => {
           dispatch(setDay((event as Date).toString()));
+          if (onClickDay) onClickDay();
         }}
         month={month}
         onMonthChange={(event: unknown) => {
