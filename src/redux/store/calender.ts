@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'; 
 import { RootState } from './index';
-import { calendarType, currentDateType } from '../../calender.type'; 
+import { calendarType, currentDateType } from '../../type/calender.type'; 
 import { getWeekDays, updateCalendarState } from '../../utils/calender';
 
 const today = new Date();
