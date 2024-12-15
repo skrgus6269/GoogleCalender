@@ -2,6 +2,9 @@
 
 # 사용법
 
+## 클론 
+`https://github.com/skrgus6269/GoogleCalender.git`
+
 ## 라이브러리 다운로드
 `npm install`
 
