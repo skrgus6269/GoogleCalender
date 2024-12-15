@@ -1,0 +1,67 @@
+@import "react-day-picker/style.css";
+ 
+.rdp-root {
+  --rdp-day_button-width: 24px;
+  --rdp-day_button-height: 24px;
+  --rdp-day-width: 30px;
+  --rdp-day-height: 28px;
+  --rdp-nav-height: 32px;
+  --rdp-today-color: white;
+  --rdp-selected-border: none; padding: 0 14px 16px 19px;
+  width: 256px;
+}
+
+// 요일 헤더
+.rdp-weekdays { 
+  font-size: .875rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.25rem;
+  .rdp-weekday {
+    padding: 0;
+  }
+}
+  
+// 선택된 날짜
+.rdp-selected .rdp-day_button {
+  background-color: rgb(205, 188, 255);; 
+}
+ 
+//오늘 날짜
+.rdp-today:not(.rdp-outside) button{ 
+  border: none;
+  background-color: rgb(80, 52, 161);
+}
+ 
+.rdp-day {
+  font-size: 10px;
+  font-weight: 500;
+  vertical-align: middle; 
+  font-family: "Open Sans", sans-serif;
+  
+  button {
+    &:hover {
+        background-color: rgb(231, 231, 231);
+      }
+  }
+}
+
+//달력 달력 이동 버튼
+.rdp-nav {
+  svg {
+    fill: black;
+    width: 16px;
+    height: 16px;
+  }
+}
+ 
+//달력 헤더 캡션 라벨
+.rdp-caption_label {
+  padding-left: 24px;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  font-size: .875rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.25rem;
+  padding-left: 10px;
+}

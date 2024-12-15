@@ -1,0 +1,26 @@
+.layout {
+  display: flex;  
+  flex-grow: 1;
+  margin-right: 56px;
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+    margin-right: 0;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+  
+body {
+  margin: 0;
+  background-color: #f8fafd;
+  overflow: hidden;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+}
+
+.header {
+  height: 48px;
+}

@@ -1,0 +1,80 @@
+.layout {
+  display: flex;
+  height: 48px;
+  padding: 8px;
+  min-height: 48px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 56px 0 8px;
+  gap: 46px; 
+}
+
+.left, .middle, .right {
+  display: flex; 
+}
+
+.left {
+  .menuIcon {
+      width: 24px;
+      height: 24px;
+      color: black;
+      padding: 12px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    justify-content: flex-start;
+
+    img {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
+    }
+
+    h1 {
+      color: rgb(80, 52, 161);
+      margin: 0;
+      font-size: 26px; 
+    }
+  }
+}
+
+.middle {
+  flex-grow: 1;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  .todayButton {
+    border: none;
+    background-color: white;
+    width: 64px;
+    height: 34px;
+    border-radius: 9999px; 
+    cursor: pointer;
+    border: 1px solid rgb(205, 188, 255);
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+    gap:4px;
+    svg {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+    }
+  }
+
+  .currentDate {
+    display: flex;
+    align-items: center;
+    h2 {
+      margin: 0 0 4px 0;
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+
+}
+
