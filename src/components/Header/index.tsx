@@ -11,6 +11,7 @@ import {
   setNextWeek,
   setPrevWeek,
 } from "../../redux/store/calender";
+import logo from "/logo.png";
 
 export default function Header() {
   const dispatch = useDispatch();
@@ -38,7 +39,7 @@ export default function Header() {
           <IoMenuOutline className={$.menuIcon} />
         </div>
         <div className={$.logo}>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Ringle.png" />
+          <img src={logo} />
           <h1>Calender</h1>
         </div>
       </div>
